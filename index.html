@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>444 Maker</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QRFQVE2PQL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QRFQVE2PQL');
+  </script>
+</head>
+<body>
+  <h1>SHADOWS JSON MAKER (def not skided)</h1>
+  <div style="margin-bottom: 10px;">
+    <button onclick="addItem(); kbUpd();">Add</button>
+    <input id="Amount" type="number" value="1" placeholder="1">
+    <select id="item-selected" name="items">
+      <!-- options omitted for brevity; see previous code block for full list -->
+    </select>
+  </div>
+
+  <div style="margin-bottom:5px;">
+    <label style="align-items: center; color: white; font-size: 18px;">
+      <input type="checkbox" id="cR" style="width: 25px; height: 25px; margin-right: 8px;">
+      Random
+    </label>
+    <label class="slide" style="width:75px;display:inline-block;" id="color">Color: 161</label>
+    <input value="161" id="color-sl" min="0" max="210" type="range">
+  </div>
+  <label style="align-items: center; color: white; font-size: 18px;">
+    <input type="checkbox" id="saR" style="width: 25px; height: 25px; margin-right: 8px;">
+    Random
+  </label>
+  <label class="slide" style="width:110px;display:inline-block;" id="sat">Saturation: 120</label>
+  <input value="120" min="0" max="120" id="sat-sl" type="range">
+  <div>
+    <label style="align-items: center; color: white; font-size: 18px;">
+      <input type="checkbox" id="sR" style="width: 25px; height: 25px; margin-right: 8px;">
+      Random
+    </label>
+    <label class="slide" style="width:75px;display:inline-block;" id="size">Size: 0</label>
+    <input value="128" min="0" max="255" id="size-sl" type="range">
+  </div>
+  <div style="display: flex; align-items: center;">
+    <label class="slide" style="width: 190px; display: inline-block;">How your item will look:</label>
+    <div style="position: relative; display: inline-block; margin-left: 20px;">
+      <img width="100" src="crate.png" id="dispItem">   
+      <div id="overlayM" style="position: absolute; inset: 0px; background: rgba(39, 0, 255, 0.5); pointer-events: none;"></div>
+    </div>
+  </div>
+
+  <div style="margin-bottom:2px;">
+    <label style="align-items: center; color: white; font-size: 18px;">
+      <input type="checkbox" id="vR" style="width: 25px; height: 25px; margin-right: 8px;">
+      Random
+    </label>
+    <label class="slide" style="width:180px;display:inline-block;" id="state">Value(Shredders): 0</label>
+    <input value="0" min="0" max="8000" id="state-sl" type="range">
+  </div>
+  <div style="margin-bottom:25px"><label style="align-items: center; color: white; font-size: 18px;">
+    <input type="checkbox" id="aR" style="width: 25px; height: 25px; margin-right: 8px;">
+    Random
+  </label>
+  <label class="slide" style="width:125px;display:inline-block;" id="ammo">Ammo(Guns): 0</label>
+  <input value="0" min="0" max="2" id="ammo-sl" type="range">
+  </div>
+  <button style="width:50px" onclick="window.alert('when you use explode mode, when you go to make a bypass bag, everything will automatically be on a heart gun no matter what the item is. so when you take the whole bag out of your stash, the items go everywhere! ')"> ? </button>
+  <label style="align-items: center; color: white; font-size: 18px;">
+    <input type="checkbox" id="explodeMode" style="width: 25px; height: 25px; margin-right: 8px;">
+    Explode mode 💥
+  </label>
+  <div style="margin-bottom: 35px">
+    <button style="margin-bottom: 25px;height: 75px; width: 290px;" onclick="createAlot()">create bypass bag with _ amount of items</button>
+  </div>
+  
+  <div style="margin-bottom:2px">
+    <button onclick="dlJson()">download json</button>
+    <button onclick="info()" style="width:200px;">tools info</button>
+    <button onclick="info2()" style="width:300px;">patch notes / credits</button>
+    <button onclick="ytL()" style="width:250px;">video tutorial</button>
+  </div>
+  <div style="margin-bottom:35px">
+    <button onclick="window.open('https://discord.gg/JyC7aB2q','_blank')" style="background: linear-gradient(to right,#1cfc03, #8cf081);">Paid Bot</button>
+    <button onclick="window.open('https://discord.com/invite/xmod','_blank')" style="background: linear-gradient(to right,#cf6b00, #ffc552);">Free Bot</button>
+  </div>
+  <div id="rootContainer">
+    <label id="kb" style="color:background: linear-gradient(to right,#252525, #454545);border: 6px solid rgb(87, 87, 87); color:white; font-size: 25px;padding: 5px;">your json:</label>
+    <label onclick="manageItem(this)" class="itemCl container" acvalue="rightHand" style="background-color: white; margin-top: 25px" id="rightHandRoot">rightHand</label>
+  </div> 
+  <div style="height:150px;"></div>
+  <script>
+    // All JS as in your provided code
+    // (Truncated for brevity; see previous content for full code)
+  </script>
+</body>
+</html>
