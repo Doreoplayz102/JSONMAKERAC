@@ -1,0 +1,668 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>444 Maker</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QRFQVE2PQL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QRFQVE2PQL');
+</script>
+<body>
+<div>
+<button style="background: linear-gradient(to right,#1aa33f, #98e897);" onclick="window.alert('you will now be redirected to pls donate. please help support my website so I dont go broke. I sacrifice my hours so that you guys can have an easy and free json editor 🥺'); window.open('https://plsdonate.com/@BuildNMakin','_blank')">
+💵support me
+</button>
+</div>
+  <h1>v1.1.2 more colors!(yea i messed up sorry)</h1>
+  <div style="margin-bottom: 10px;">
+    <button onclick="addItem(); kbUpd();">Add</button>
+    <input id="Amount" type="number" value='1' placeholder="1" />
+    <select id="item-selected" name="items">
+<option value="item_apple">Apple</option>
+<option value="item_anti_gravity_grenade">Anti-Gravity Grenade</option>
+<option value="item_arrow">Arrow</option>
+<option value="item_arrow_heart">Arrow Heart</option>
+<option value="item_arrow_lightbulb">Arrow Lightbulb</option>
+<option value="item_backpack">Backpack</option>
+<option value="item_backpack_black">Black Backpack</option>
+<option value="item_backpack_green">Green Backpack</option>
+<option value="item_backpack_large_base">Large Base Backpack</option>
+<option value="item_backpack_large_clover">Large Clover Backpack</option>
+<option value="item_backpack_large_basketball">Large Basketball Backpack</option>
+<option value="item_backpack_pink">Pink Backpack</option>
+<option value="item_backpack_small_base">Small Base Backpack</option>
+<option value="item_backpack_white">White Backpack</option>
+<option value="item_backpack_with_flashlight">Backpack with Flashlight</option>
+<option value="item_balloon">Balloon</option>
+<option value="item_balloon_heart">Heart Balloon</option>
+<option value="item_banana">Banana</option>
+<option value="item_baseball_bat">Baseball Bat</option>
+<option value="item_big_cup">Big Cup</option>
+<option value="item_boombox">Boombox</option>
+<option value="item_box_fan">Box Fan</option>
+<option value="item_boombox_neon">Neon Boombox</option>
+<option value="item_calculator">Calculator</option>
+<option value="item_cardboard_box">Cardboard Box</option>
+<option value="item_cash">Cash</option>
+<option value="item_cash_pile">Cash Pile</option>
+<option value="item_cash_mega_pile">Mega Cash Pile</option>
+<option value="item_clapper">Clapper</option>
+<option value="item_cluster_grenade">Cluster Grenade</option>
+<option value="item_cola">Cola</option>
+<option value="item_cola_large">Large Cola</option>
+<option value="item_company_ration">Company Ration</option>
+<option value="item_company_ration_heal">Company Ration (Heal)</option>
+<option value="item_cracker">Cracker</option>
+<option value="item_crate">Crate</option>
+<option value="item_crossbow">Crossbow</option>
+<option value="item_crossbow_heart">Heart Crossbow</option>
+<option value="item_crowbar">Crowbar</option>
+<option value="item_disc">Disc</option>
+<option value="item_disposable_camera">Disposable Camera</option>
+<option value="item_dynamite">Dynamite</option>
+<option value="item_dynamite_cube">Dynamite Cube</option>
+<option value="item_egg">Yummy Egg!</option>
+<option value="item_flaregun">Flare Gun</option>
+<option value="item_flashbang">Flashbang</option>
+<option value="item_flashlight">Flashlight</option>
+<option value="item_flashlight_mega">Mega Flashlight</option>
+<option value="item_flashlight_red">Red Flashlight</option>
+<option value="item_floppy3">Floppy 3</option>
+<option value="item_floppy5">Floppy 5</option>
+<option value="item_football">Football</option>
+<option value="item_frying_pan">Frying Pan</option>
+<option value="item_glowstick">Glowstick</option>
+<option value="item_goldbar">Gold Bar</option>
+<option value="item_grenade">Grenade</option>
+<option value="item_heart_chunk">Heart Chunk</option>
+<option value="item_heart_gun">Heart Gun</option>
+<option value="item_heartchocolatebox">Heart Chocolate Box</option>
+<option value="item_hh_key">HH Key</option>
+<option value="item_hookshot">Hookshot</option>
+<option value="item_hoverpad">Hoverpad</option>
+<option value="item_impulse_grenade">Impulse Grenade</option>
+<option value="item_jetpack">Jetpack</option>
+<option value="item_keycard">Keycard</option>
+<option value="item_lance">Lance</option>
+<option value="item_large_banana">Large Banana</option>
+<option value="item_mug">Mug</option>
+<option value="item_nut">Nut</option>
+<option value="item_ogre_hands">Ogre Hands</option>
+<option value="item_ore_copper_l">Large Copper Ore</option>
+<option value="item_ore_copper_m">Medium Copper Ore</option>
+<option value="item_ore_copper_s">Small Copper Ore</option>
+<option value="item_ore_gold_l">Large Gold Ore</option>
+<option value="item_ore_gold_m">Medium Gold Ore</option>
+<option value="item_ore_gold_s">Small Gold Ore</option>
+<option value="item_ore_hell">Hell Ore</option>
+<option value="item_ore_silver_l">Large Silver Ore</option>
+<option value="item_ore_silver_m">Medium Silver Ore</option>
+<option value="item_ore_silver_s">Small Silver Ore</option>
+<option value="item_painting_canvas">Painting Canvas</option>
+<option value="item_paperpack">Paper Pack</option>
+<option value="item_pelican_case">Suit/Pelican Case</option>
+<option value="item_pickaxe">Pickaxe</option>
+<option value="item_pickaxe_cny">CNY Pickaxe</option>
+<option value="item_pickaxe_cube">Cube Pickaxe</option>
+<option value="item_pipe">Pipe</option>
+<option value="item_plunger">Plunger</option>
+<option value="item_pogostick">Pogostick</option>
+<option value="item_police_baton">Police Baton</option>
+<option value="item_pumpkin_pie">Pumpkin Pie</option>
+<option value="item_pumpkinjack">Pumpkin Jack</option>
+<option value="item_pumpkinjack_small">Small Pumpkin Jack</option>
+<option value="item_quiver">Quiver</option>
+<option value="item_quiver_heart">Heart Quiver</option>
+<option value="item_radioactive_broccoli">Radioactive Broccoli</option>
+<option value="item_randombox_mobloot_big">Random Box Mob Loot (Big)</option>
+<option value="item_randombox_mobloot_medium">Random Box Mob Loot (Medium)</option>
+<option value="item_randombox_mobloot_small">Random Box Mob Loot (Small)</option>
+<option value="item_randombox_mobloot_weapons">Random Box Mob Loot (Weapons)</option>
+<option value="item_revolver">Revolver</option>
+<option value="item_revolver_ammo">Revolver Ammo</option>
+<option value="item_rope">Rope</option>
+<option value="item_rpg">RPG</option>
+<option value="item_rpg_ammo">RPG Ammo</option>
+<option value="item_rpg_cny">CNY RPG</option>
+<option value="item_rubberducky">Rubber Ducky</option>
+<option value="item_ruby">Ruby</option>
+<option value="item_saddle">Saddle</option>
+<option value="item_scanner">Scanner</option>
+<option value="item_scissors">Scissors</option>
+<option value="item_shield">Shield</option>
+<option value="item_shield_bones">Bones Shield</option>
+<option value="item_shield_police">Police Shield</option>
+<option value="item_shotgun">Shotgun</option>
+<option value="item_shotgun_ammo">Shotgun Ammo</option>
+<option value="item_shredder">Shredder</option>
+<option value="item_shrinking_broccoli">Shrinking Broccoli</option>
+<option value="item_snowball">Snowball</option>
+<option value="item_stapler">Stapler</option>
+<option value="item_stick_armbones">Stick Arm Bones</option>
+<option value="item_stick_bone">Stick Bone</option>
+<option value="item_sticker_dispenser">Sticker Dispenser</option>
+<option value="item_sticky_dynamite">Sticky Dynamite</option>
+<option value="item_stinky_cheese">Stinky Cheese</option>
+<option value="item_tablet">Tablet</option>
+<option value="item_tapedispenser">Tape Dispenser</option>
+<option value="item_tele_grenade">Tele Grenade</option>
+<option value="item_theremin">Theremin</option>
+<option value="item_timebomb">Time Bomb</option>
+<option value="item_toilet_paper">Toilet Paper</option>
+<option value="item_toilet_paper_mega">Mega Toilet Paper</option>
+<option value="item_toilet_paper_roll_empty">Empty Toilet Paper Roll</option>
+<option value="item_treestick">Tree Stick</option>
+<option value="item_tripwire_explosive">Tripwire Explosive</option>
+<option value="item_trophy">Trophy</option>
+<option value="item_turkey_leg">Turkey Leg</option>
+<option value="item_turkey_whole">Whole Turkey</option>
+<option value="item_umbrella">Umbrella</option>
+<option value="item_umbrella_clover">Clover Umbrella</option>
+<option value="item_unidentified">Unidentified</option>
+<option value="item_upsidedown_loot">Upside Down Loot</option>
+<option value="item_uranium_chunk_l">Large Uranium Chunk</option>
+<option value="item_uranium_chunk_m">Medium Uranium Chunk</option>
+<option value="item_uranium_chunk_s">Small Uranium Chunk</option>
+<option value="item_whoopie">Whoopie</option>
+<option value="item_zipline_gun">Zipline Gun</option>
+<option value="item_rpg_easter">Easter RPG</option>
+<option value="item_rpg_ammo_egg">RPG Ammo Egg</option>
+<option value="item_revolver_gold">Gold Revolver</option>
+
+    </select>
+  </div>
+
+  <div style="margin-bottom:5px;">
+<label style="align-items: center; color: white; font-size: 18px;">
+  <input type="checkbox" id="cR" style="width: 25px; height: 25px; margin-right: 8px;">
+  Random
+</label>
+    <label class="slide"style="width:75px;display:inline-block;" id="color">Color: 161</label>
+    <input value="161" id="color-sl" min="0" max="240" type="range"></input>
+</div>
+<label style="align-items: center; color: white; font-size: 18px;">
+  <input type="checkbox" id="saR" style="width: 25px; height: 25px; margin-right: 8px;">
+  Random
+</label>
+    <label class="slide"style="width:120px;display:inline-block;" id="sat">Saturation: 120</label>
+    <input value="240" min="0" max="248" id="sat-sl" type="range"></input>
+<div>
+<label style="align-items: center; color: white; font-size: 18px;">
+  <input type="checkbox" id="sR" style="width: 25px; height: 25px; margin-right: 8px;">
+  Random
+</label>
+    <label class="slide" style="width:75px;display:inline-block;" id="size">Size: 0</label>
+    <input value="128" min="0" max="255" id="size-sl" type="range"></input>
+  </div>
+<div style="display: flex; align-items: center;">
+  <label class="slide" style="width: 190px; display: inline-block;">How your item will look:</label>
+  <div style="position: relative; display: inline-block; margin-left: 20px;">
+    <img width="100" src="crate.png" id="dispItem">   
+    <div id="overlayM"style="
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(255, 0, 0, 0.3);
+      pointer-events: none;
+    "></div>
+  </div>
+</div>
+
+  <div style="margin-bottom:2px;">
+    <label style="align-items: center; color: white; font-size: 18px;">
+  <input type="checkbox" id="vR" style="width: 25px; height: 25px; margin-right: 8px;">
+  Random
+</label>
+    <label class="slide" style="width:180px;display:inline-block;" id="state">Value(Shredders): 0</label>
+    <input value="0" min="0" max="8000" id="state-sl" type="range"></input>
+  </div>
+  <div style="margin-bottom:25px"><label style="align-items: center; color: white; font-size: 18px;">
+  <input type="checkbox" id="aR" style="width: 25px; height: 25px; margin-right: 8px;">
+  Random
+</label>
+    <label class="slide" style="width:125px;display:inline-block;" id="ammo">Ammo(Guns): 0</label>
+    <input value="0" min="0" max="2" id="ammo-sl" type="range"></input>
+  </div>
+    <button style="width:50px"onclick="window.alert('when you use explode mode, when you go to make a bypass bag, everything will automatically be on a heart gun no matter what the item is. so when you take the whole bag out of your stash, the items go everywhere! ')"> ? </button>
+    <label style="align-items: center; color: white; font-size: 18px;">
+  <input type="checkbox" id="explodeMode" style="width: 25px; height: 25px; margin-right: 8px;">
+  Explode mode 💥
+</label>
+  <div style="margin-bottom: 35px">
+
+    <button style="margin-bottom: 25px;height: 75px; width: 290px;" onclick="createAlot()">create bypass bag with _ amount of items</button>
+  </div>
+  
+  <div style="margin-bottom:2px">
+
+    <button onclick="dlJson()">download json</button>
+    <button onclick="info()" style='width:200px;'>tools info</button>
+    <button onclick="info2()" style='width:300px;'>patch notes / credits</button>
+    <button onclick="ytL()" style='width:250px;'>video tutorial</button>
+  </div>
+  <div style="margin-bottom:35px">
+    <button onclick="window.open('https://discord.gg/JyC7aB2q','_blank')"style="background: linear-gradient(to right,#1cfc03, #8cf081);">Paid Bot</button>
+    <button onclick="window.open('https://discord.com/invite/xmod','_blank')"style="background: linear-gradient(to right,#cf6b00, #ffc552);">Free Bot</button>
+  </div>
+  <div id="rootContainer">
+        <label id="kb"style="color:background: linear-gradient(to right,#252525, #454545);border: 6px solid rgb(87, 87, 87); color:white; font-size: 25px;padding: 5px;">your json:</label>
+    <label onclick="manageItem(this)" class="itemCl container" ACvalue="rightHand" style="background-color: white; margin-top: 25px" id="rightHandRoot">rightHand</label>
+  </div> 
+
+  <div style="height:150px;">
+  </div>
+  <button onclick="admin()">
+    Admin Stuff
+  </button>
+
+  <script>
+    function admin() {
+      const p = window.prompt("Enter the NEW supa secret password");
+      if (p=="stronger password")
+      {
+        // this time can atleast not share it on discord :(
+        window.open('https://analytics.google.com/analytics/web/?utm_source=marketingplatform.google.com&utm_medium=et&utm_campaign=marketingplatform.google.com%2Fabout%2Fanalytics%2F#/p489394857/reports/intelligenthome', '_blank');
+      }
+      else{
+         window.alert("go away bum! SCRAM!");
+        }
+    }
+    // Slider event listeners
+    const cl = document.getElementById("color-sl")
+    const sr = document.getElementById("satu-sl");
+     document.getElementById("overlayM").style.background = hueSaturationToRGB(cl.value, (document.getElementById("sat-sl").value)) + ", 0.3)";
+
+    document.getElementById("color-sl").oninput = function() {
+      document.getElementById("color").textContent = "Color: " + this.value;
+      document.getElementById("overlayM").style.background = hueSaturationToRGB(cl.value, (document.getElementById("sat-sl").value)) + ", 0.3)";
+    }
+    document.getElementById("sat-sl").oninput = function() {
+      document.getElementById("sat").textContent = "Saturation: " + (this.value-124);
+            document.getElementById("overlayM").style.background = hueSaturationToRGB(cl.value, (document.getElementById("sat-sl").value)) + ", 0.3)";
+    }
+    document.getElementById("size-sl").oninput = function() {
+      document.getElementById("size").textContent = "Size: " + (this.value - 128);
+      document.getElementById("dispItem").width = ((this.value) / 127)*85+32;
+    }
+    document.getElementById("state-sl").oninput = function() {
+      document.getElementById("state").textContent = "Value(Shredders): " + this.value;
+    }
+    document.getElementById("ammo-sl").oninput = function() {
+      document.getElementById("ammo").textContent = "Ammo(Guns): " + this.value;
+    }
+
+    var rootCurrent = document.getElementById("rightHandRoot");
+    var previousRoot = null;
+
+    function info() {
+      window.alert(`Please read all:
+      1. Root: All items created will now go inside of said item.
+      2. Delete: Deletes the item. 
+      3. Dupe: Duplicates the item a set amount of times. 
+      4. Hide children: Hides the items inside of the item. (no, this does NOT delete the items, it just hides them).
+      a. create bypass bag: creates a bag with the specified amount of items given and the currently selected item.
+      extra: if you set a modifier(color,sat,size,value,ammo) to 0, it will remove the value from the json :)`);
+    }
+    
+    function info2() {
+      window.alert(`1.1.1 credits to ##### Cloudz ##### for finding new item ids!
+      added lots of cool features like an item display and.. uuhhh. idk. but yea go support me.)`);
+    }
+        function ytL() {
+    window.open("https://www.youtube.com/watch?v=YBEIfIm5kYQ", "_blank");
+    }
+    
+    function setRoot(that) {
+      previousRoot = rootCurrent; // Update previous root
+      rootCurrent = that;
+    }
+
+    function manageItem(clickedElement) {
+      clickedElement.style.boxShadow = "2px 6px 16px 6px #0094ff";
+      
+      setTimeout(function() {
+        var choice = parseInt(window.prompt("Enter 1 to set root, 2 to delete, 3 to duplicate, or 4 to hide/show children:"));
+        
+        switch (choice) {
+          case 1:
+            setRoot(clickedElement);
+            break;
+          case 2:
+            if (clickedElement && clickedElement.parentNode && clickedElement != document.getElementById("rightHandRoot")) {
+              clickedElement.parentNode.removeChild(clickedElement);
+            } else {
+              alert('No item to delete!/Can\'t delete right hand!');
+            }
+            break;
+          case 3:
+            if (clickedElement != document.getElementById("rightHandRoot") && clickedElement.parentNode != document.getElementById("rightHandRoot")) {
+              clickedElement.style.boxShadow = "2px 6px 16px 6px #ffffff";
+              const duplicateCount = parseInt(window.prompt("How many times do you want to duplicate this item?"));
+              for (let i = 0; i < duplicateCount; i++) {
+                var duplicate = clickedElement.cloneNode(true);
+                duplicate.onclick = function(event) { 
+                  event.stopPropagation(); 
+                  manageItem(this);
+                };
+                clickedElement.parentNode.appendChild(duplicate);
+              }
+              alert(duplicateCount + ' item(s) duplicated!');
+            } else {
+              window.alert('No, just no');
+            }
+            break;
+          case 4:
+            var children = clickedElement.children;
+            for (let i = 0; i < children.length; i++) {
+              children[i].style.display = (children[i].style.display === 'none') ? 'block' : 'none';
+            }
+            break;
+          default:
+            alert('Invalid choice! Please enter 1, 2, 3, or 4.');
+        }
+        clickedElement.style.boxShadow = "2px 6px 16px 6px #ffffff"; // Change box shadow color to white after action
+      }, 10); // Delay 
+    }
+
+    function getDepth(element) {
+      let depth = 0;
+      while (element.parentNode && element.parentNode.id !== "rootContainer") {
+        depth++;
+        element = element.parentNode;
+      }
+      return depth;
+    }
+    
+    var recentItemCreated = null;
+
+    function hueSaturationToRGB(hue, saturation) {
+      const hue2 = (hue / 240) * 325;
+      const s = saturation / 120; // Normalize saturation
+      const c = s * 255; // Chroma
+      const x = c * (1 - Math.abs((hue2 / 60) % 2 - 1));
+      const m = 255 - c;
+
+      let r, g, b;
+      if (hue2 < 60) {
+        r = c; g = x; b = 0;
+      } else if (hue2 < 120) {
+        r = x; g = c; b = 0;
+      } else if (hue2 < 180) {
+        r = 0; g = c; b = x;
+      } else if (hue2 < 240) {
+        r = 0; g = x; b = c;
+      } else if (hue2 < 300) {
+        r = x; g = 0; b = c;
+      } else {
+        r = c; g = 0; b = x;
+      }
+
+      return `rgb(${Math.round(r + m)}, ${Math.round(g + m)}, ${Math.round(b + m)}`;
+    }
+function getStringSizeInKB(str) {
+  const bytes = new TextEncoder().encode(str);
+  const sizeInKB = bytes.length / 1024;
+  return sizeInKB.toFixed(2); 
+}
+
+    function addItem() {
+      var rootValid = 1;
+      if (document.getElementById("rightHandRoot").children.length > 0 && rootCurrent == document.getElementById("rightHandRoot")) {
+        rootValid = 0;
+      }
+      if (rootValid == 1) {
+        let color = null;
+        let size = null;
+        let item = document.getElementById("item-selected");
+        let satu = null;
+        let ammo = null;
+        let state = null;
+        let amount = null;
+
+        //caps
+        amount = document.getElementById("Amount").value;
+        if (rootCurrent == document.getElementById("rightHandRoot"))
+        amount = 1;
+
+
+        for (let i = 0; i < amount; i++) {
+                  if(document.getElementById("sR").checked)
+        size = Math.round(Math.random()*255)-128;
+       else
+        size = document.getElementById("size-sl").value-128;
+
+       if(document.getElementById("cR").checked)
+      color = Math.round(Math.random()*240);
+       else
+      color = document.getElementById("color-sl").value;
+
+       if(document.getElementById("saR").checked)
+       satu = Math.round(Math.random()*248)-124;
+       else
+        satu = ((document.getElementById("sat-sl").value)-124);
+
+        if(document.getElementById("vR").checked)
+        state = Math.round(Math.random()*8000);
+        else
+        state = document.getElementById("state-sl").value;
+
+        if(document.getElementById("aR").checked)
+        ammo = Math.round(Math.random()*2);
+        else
+        ammo = document.getElementById("ammo-sl").value;
+        
+
+          const itemObj = document.createElement("label");
+          recentItemCreated = itemObj;
+          itemObj.innerHTML = item.options[item.selectedIndex].innerHTML;
+
+          // Attributes of Animal Company Items:
+          itemObj.setAttribute('ACvalue', item.value);
+          if (color != 0)
+            itemObj.setAttribute('colorHue', color);
+          if (size != 0)
+            itemObj.setAttribute('scaleModifier', size);
+          if (satu != 0)
+            itemObj.setAttribute('colorSaturation', satu);
+          if (item.value == "item_shredder" && state != 0)
+            itemObj.setAttribute('state', state);
+          if (item.value == "item_shotgun" && ammo != 0)
+            itemObj.setAttribute('ammo', ammo);
+
+          itemObj.className = 'itemCl';
+          itemObj.onclick = function(event) { 
+            event.stopPropagation(); 
+            manageItem(this);
+          };
+
+          if (rootCurrent) {
+            const depth = getDepth(rootCurrent);
+            rootCurrent.appendChild(itemObj);
+          } else {
+            alert('Root is not set. Please set the root first.');
+          }
+          if (color==0)
+          satu=0;
+
+          recentItemCreated.style.backgroundColor = hueSaturationToRGB(color, satu) + ")";
+        }
+      } else {
+        window.alert("Can't put more than one item into your rightHand, dum dum 🤣");
+      }
+    }
+            function kbUpd(){
+            let childrenArray = [];
+    const rightHandChildren = document.getElementById("rightHandRoot").children;
+
+    for (let i = 0; i < rightHandChildren.length; i++) {
+        const item = rightHandChildren[i];
+        let itemObject = {
+            "itemID": item.getAttribute('ACvalue')
+        };
+        if (item.children.length > 0) {
+            itemObject.children = compileChildren(item);
+        }
+        childrenArray.push(itemObject);
+    }
+
+        document.getElementById("kb").innerHTML="your json (kb: " + getStringSizeInKB(JSON.stringify({childrenArray}, null, 2)) + " ): ";
+      }
+
+    function compileChildren(element) {
+        let childrenArray = [];
+        for (let i = 0; i < element.children.length; i++) {
+            const child = element.children[i];
+            let childObject = {
+                "itemID": child.getAttribute('ACvalue')
+            };
+            if (child.getAttribute("colorHue") != null) {
+                childObject.colorHue = parseFloat(child.getAttribute("colorHue")); // Ensure it's a number
+            }
+            if (child.getAttribute("colorSaturation") != null) {
+                childObject.colorSaturation = parseFloat(child.getAttribute("colorSaturation")); // Ensure it's a number
+            }
+            if (child.getAttribute("scaleModifier") != null) {
+                childObject.scaleModifier = parseFloat(child.getAttribute("scaleModifier")); // Convert to number
+            }
+            if (child.getAttribute("state") != null) {
+                childObject.state = parseInt(child.getAttribute("state"), 10); // Convert to integer
+            }
+            if (child.getAttribute("ammo") != null) {
+                childObject.ammo = parseInt(child.getAttribute("ammo"), 10); // Convert to integer
+            }
+            
+            if (child.children.length > 0) {
+                childObject.children = compileChildren(child);
+            }
+            childrenArray.push(childObject);
+        }
+        return childrenArray;
+    }
+function dlJson() {
+    function downloadFile(filename, content) {
+        const blob = new Blob([content], { type: 'application/json' });
+        const link = document.createElement('a');
+        link.download = filename;
+        link.href = window.URL.createObjectURL(blob);
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+
+
+
+    let childrenArray = [];
+    const rightHandChildren = document.getElementById("rightHandRoot").children;
+
+    for (let i = 0; i < rightHandChildren.length; i++) {
+        const item = rightHandChildren[i];
+        let itemObject = {
+            "itemID": item.getAttribute('ACvalue')
+        };
+        if (item.children.length > 0) {
+            itemObject.children = compileChildren(item);
+        }
+        childrenArray.push(itemObject);
+    }
+
+    // Correcting the structure of rightHand to be an object instead of an array
+    var download = JSON.stringify({
+        "version": 1,
+        "444mat-json-maker.netlify.app": "",
+        "leftHand": {},
+        "rightHand": childrenArray.length > 0 ? childrenArray[0] : {}, // Use the first child or an empty object
+        "leftHip": {},
+        "rightHip": {},
+        "back": {}
+    }, null, 2);
+    
+    window.alert("Please share the site with others 🥹");
+    downloadFile(window.prompt("Name of json??") + "-444mat-json-makerDOTcom.json", download);
+}
+
+
+
+    function createAlot() {
+      let alotAmount = window.prompt("how many " + document.getElementById("item-selected").options[document.getElementById("item-selected").selectedIndex].innerHTML + "'s do you want in one bag?");
+      if (alotAmount < 1 || isNaN(alotAmount))
+        alotAmount = 1;
+      if (alotAmount > 3500) {
+        alotAmount = 3500;
+        window.alert('automatically set to 3500 items');
+      }
+      alotAmount = Math.round(alotAmount);
+
+      const itemSave = document.getElementById("item-selected").value;
+      const select = document.getElementById("item-selected");
+
+      if (document.getElementById("rightHandRoot").children.length > 0) {
+        document.getElementById("rightHandRoot").removeChild(document.getElementById("rightHandRoot").children[0]);
+      }
+
+      setRoot(document.getElementById("rightHandRoot"));
+      document.getElementById("item-selected").value = "item_backpack_large_base";
+      addItem();
+      setRoot(document.getElementById("rightHandRoot").children[0]);
+
+      let itemsLeft = alotAmount;
+
+      // Prevents under filling
+      let bagAmnt = Math.ceil(alotAmount / 23);
+      let layersNeded = Math.ceil(bagAmnt / 23);
+      document.getElementById("rightHandRoot").removeChild(document.getElementById("rightHandRoot").children[0]);
+      setRoot(document.getElementById("rightHandRoot"));
+      select.value = "item_backpack_large_base";
+      addItem();
+      let alotRoot = document.getElementById("rightHandRoot").children[0];
+      let bagsMade = 0;
+      let itemsMade = 0;
+      let amountSave = document.getElementById("Amount").value;  
+      document.getElementById("Amount").value = 1;
+      setRoot(alotRoot);
+      for (let x = 0; x < layersNeded; x++) {
+        for (let x2 = 0; x2 < 23; x2++) {
+          if (bagsMade == bagAmnt)
+            break;
+          select.value = "item_heart_gun";
+          addItem();
+          setRoot(recentItemCreated);
+          select.value = "item_backpack_large_base";
+          addItem();
+          setRoot(recentItemCreated);
+          if (x2 != 22) {
+            for (let x3 = 0; x3 < 23; x3++) {
+              if (itemsMade == alotAmount)
+                break;
+              if (itemSave.includes("backpack") || itemSave == "item_shredder" || itemSave == "item_pelican_case" || itemSave.includes("quiver")||document.getElementById("explodeMode").checked) {
+                select.value = "item_heart_gun";
+                addItem();
+                setRoot(recentItemCreated);
+              }
+              select.value = itemSave;
+              addItem();
+              if (itemSave.includes("backpack") || itemSave == "item_shredder" || itemSave == "item_pelican_case" || itemSave.includes("quiver")||document.getElementById("explodeMode").checked)
+                setRoot(recentItemCreated.parentNode.parentNode);
+              itemsMade += 1;
+            }
+          }
+          setRoot(alotRoot);
+          bagsMade += 1;
+        }
+        alotRoot = recentItemCreated;
+      }
+      select.value = itemSave;
+      document.getElementById("Amount").value = amountSave;
+      setRoot(document.getElementById("rightHandRoot"));
+      window.alert("Done!");
+      kbUpd();
+    }
+  </script>
+</body>
+</html>
